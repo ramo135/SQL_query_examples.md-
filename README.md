@@ -18,3 +18,8 @@
    FROM orders
    INNER JOIN customers ON orders.customer_id = customers.customer_id;
  
+4. **Filtering with Conditions**
+   ```sql
+   SELECT product_name, unit_price
+   FROM products
+   WHERE unit_price > 50 AND category = 'Electronics';
